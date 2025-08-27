@@ -25,7 +25,7 @@ public class Pilha<T> {
         if (pilhaVazia())
             throw new EmptyStackException();
 
-        T elem = elementos.get(tamanho - 1);
+        T elem = elementos.remove(tamanho - 1);
         tamanho--;
         return elem;
     }
